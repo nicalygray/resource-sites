@@ -98,16 +98,20 @@ textarea {
    ========================================================================== */
 
 body {
-    background-color: #ffffff;
+    background-color: #DBD9DB;
     color: #000000;
     font-size: .85em;
-    font-family: 'Kreon', serif;
+    font-family: 'Garamond', serif;
     line-height: 1.5;
     text-align: left;
 } 
 
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
+h1, h2, h3, h4 {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+h3, h4 {
+    display: inline;
 }
 
 a {
@@ -126,7 +130,7 @@ a:hover, a:active {
 
 .body {
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
     clear: both; 
 }
 
@@ -140,7 +144,7 @@ a:hover, a:active {
 
 .mainHeader nav {
     background-color: #716573;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Gill Sans', sans-serif;
     font-size: 1.2em;
     height: 40px;
 }
@@ -173,28 +177,38 @@ a:hover, a:active {
 }
 
 .content {
-    width: 70%;
+    width: 100%;
     float: left;
     
 }
 
-.top-content {
-    background-color: #fff;
-    padding: 3% 5%;
-    margin-top: ;
+.content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.content ul li.cost:before {
+    content: "$";
+    display: block;
+    float: left;
+    width: 1.2em;
 }
 
 .top-content {
     background-color: #fff;
     padding: 3% 5%;
+    margin: 1% auto;
 }
 
 .bottom-content {
     background-color: #fff;
     padding: 3% 5%;
+    margin: 1% auto;
 }
 
 .sidebar-top {
+    
     width: 21%;
     float: left;
     margin: 2% 0 2% 3%;
@@ -221,13 +235,17 @@ a:hover, a:active {
 
 }
 
+.resource-list ul {
+    list-style-type: none;
+}
+
 .mainFooter {
     width: 100%;
     height: 40px;
     float: left;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Gill Sans', sans-serif;
     font-size: .85em;
-    background-color: #ffffff;
+    background-color: #716573;
     margin:  auto; 
     border-top-style: solid;
     border-top-width: 1px;
@@ -239,15 +257,11 @@ a:hover, a:active {
     width: 100%;
     margin: 1% auto;
     color: #fff;
-    text-align: right;
-
-    
+    text-align: right;   
 }
 
 .mainFooter nav {
     width: 50%;
-    background-color: #fffff;
-    height: 20px;
     float: left;
 }
 
@@ -262,14 +276,15 @@ a:hover, a:active {
 }
 
 .mainFooter nav a:link, .mainFooter nav a:visited {
-    color: #693260;
+    color: #fff;
     display: inline-block;
     padding: 10px 15px;
     height: 20px;
 }
 
 .mainFooter  nav a:hover, a:active {
-    background-color: #fff;
+    background-color: inherit;
+    color: 
 }
 
 @media only screen and (min-width: 150px) and (max-width: 600px) {
@@ -341,6 +356,53 @@ a:hover, a:active {
 
 }
 
+/* ===========================
+    Contact Form 
+   =========================== */
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    color: #999999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;     
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+    max-width: 400px;
+    line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: 1px solid #693260;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px; 
+}
+
+.form label {
+    margin-left: 10px;
+    color: #999999;
+}
+
+/* ===========================
+    Submit Button 
+   =========================== */
+
+.submit input {
+    width: 100px; 
+    height: 40px;
+    background-color: #693260; 
+    color: #FFF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;     
+}
 
 
 

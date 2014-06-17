@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="main.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato|Kreon' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
@@ -39,32 +40,54 @@
             <div class="content">
                 <article class="top-content">
                     <header>
-                        <h2>Links</h2>
+                        <h2>Contact</h2>
                     </header>
-                    <footer class="post-info">
-                        <p>quick info about this stuff</p>
-                    </footer>
                     <content>
-                        <p>this is wher I will put a contact form</p>
-                        <p><a href="http://www.reddit.com">reddit</a></p>
+                        <ul>
+                            <li><h4><a href="http://twitter.com/nicalygray">twitter @nicalygray</a></h4></li>
+                            <li><h4><a href="http://github.com/nicalygray">github/nicalygray</a></h4></li>
+                            <li><h4><a href="http://behance.com/nicalygray">behance/nicalygray</a></h4></li>
+                        </ul>
+                        <form class="form" action="mail.php" method="post">
+        
+                            <p class="name">
+                                <input type="text" name="name" id="name" placeholder="John Doe" />
+                                <label for="name">Name</label>
+                            </p>
+                            
+                            <p class="email">
+                                <input type="text" name="email" id="email" placeholder="mail@example.com" />
+                                <label for="email">Email</label>
+                            </p>
+                                    
+                            <p class="text">
+                                <textarea name="text" placeholder="Write something to us" /></textarea>
+                            </p>
+                            
+                            <p class="submit">
+                                <input type="submit" value="Send" />
+                            </p>
+                        </form>
+
                     </content>
                 </article>
             </div>
         </div>    
 
-        <aside class="sidebar-top">
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis tellus vitae elit laoreet mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            </article>
-        </aside>
-         <aside class="sidebar-bottom">
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis tellus vitae elit laoreet mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            </article>
-        </aside>
-
         <footer class="mainFooter">
-            <p>I'll put stuff here</p>
+                     <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="coding.html">CODING</a></li>
+                    <li><a href="tutorial.html">VIDEOS</a></li>
+                    <li class="active"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>    
+            <p>
+                      
+                
+            </p>
         </footer>
 
 
