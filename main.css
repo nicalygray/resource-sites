@@ -1,14 +1,5 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* base styles */
 
 html,
 button,
@@ -23,38 +14,11 @@ html {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
 
 /*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
+  Remove the gap between images, videos, audio and canvas and the bottom of
+  their containers: h5bp.com/i/440
  */
 
 audio,
@@ -65,7 +29,7 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
+  Remove default fieldset styles.
  */
 
 fieldset {
@@ -75,16 +39,16 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
+  Allow only vertical resizing of textareas.
  */
 
 textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
+/* 
    Browse Happy prompt
-   ========================================================================== */
+*/
 
 .browsehappy {
     margin: 0.2em 0;
@@ -93,9 +57,9 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* 
+   custom styles
+*/
 
 body {
     background-color: #DBD9DB;
@@ -261,7 +225,7 @@ a:hover, a:active {
 }
 
 .mainFooter nav {
-    width: 50%;
+    width: 55%;
     float: left;
 }
 
@@ -287,6 +251,10 @@ a:hover, a:active {
     color: 
 }
 
+/* 
+   media query smart phone
+*/
+
 @media only screen and (min-width: 150px) and (max-width: 600px) {
 
     .body {    
@@ -300,6 +268,7 @@ a:hover, a:active {
 
     .mainHeader nav {
         height: 200px;
+        border-radius: 0 0 5px 5px;
     }
 
     .mainHeader nav ul {
@@ -317,6 +286,10 @@ a:hover, a:active {
         padding: 10px 25px;
         height: 20px;
         display: block;
+    }
+
+    .mainHeader nav ul li:nth-child(5) a:hover, a:active {
+        border-radius: 0 0 5px 5px;
     }
 
 
@@ -354,7 +327,39 @@ a:hover, a:active {
         display: none;
     }
 
+    .mainFooter {
+        display: none;
+    }
 }
+
+/* 
+    media query tablet 
+*/
+
+@media only screen and (min-width : 600px) and (max-width : 1024px) {
+
+.mainHeader nav {
+    
+    font-size: 1em;
+    height: 35px;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+    color: #c9c6cd;
+    display: inline-block;
+    padding: 10px 15px;
+    height: 15px;
+}
+
+.mainFooter nav {
+    font-size: .75em;
+}
+.mainFooter nav a:link, .mainFooter nav a:visited {
+
+    padding: 15px 5px;
+    height: 20px;
+}
+
 
 /* ===========================
     Contact Form 
@@ -515,10 +520,6 @@ input:focus, textarea:focus {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
